@@ -85,7 +85,7 @@ a:link {
   display: block;
   /* min-height: 200px; */
   /* background-image: url('images/c1.png'); */
-  background: url("images/splash.jpg");
+  /*background: url("images/splash.jpg");*/
   background-size: cover;
   z-index: 1;
   /*overflow: visible;*/
