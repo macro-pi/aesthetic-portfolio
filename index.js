@@ -10,8 +10,8 @@ phrases.push("be cooperative in my dealings");
 phrases.push("build worthwhile solutions");
 
 let textSlideshow = () => {
-  display = document.body.querySelector('#slideshow');
-  phrase_to_show = phrases[i];
+  var display = document.body.querySelector('#slideshow');
+  var phrase_to_show = phrases[i];
   i++;
   if (i > max_i-1) {
     i = 0;
