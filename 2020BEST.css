@@ -94,7 +94,8 @@ a:link{
 }
 
 .intro-text{
-  margin-left: 20%;
+  margin-left: 25%;
+  width: 50%;
   margin-bottom: 2.5%;
 }
 
@@ -102,6 +103,18 @@ a:link{
   width: 55%;
   font-size: 16px;
   margin-left: 35%;
+}
+
+.table-intro{
+  width: 55%;
+  font-size: 16px;
+  margin-left: 33.33%;
+}
+
+.table{
+  width: 65%;
+  border: 2px solid rgba(0, 0, 0, .55);
+  margin-left: 26.5%;
 }
 
 .social-menu{

@@ -31,7 +31,7 @@
             <div class = 'bar'></div>
             <img src = 'images\BEST2020_1.jpg' class='intro-img'></img>
             <p class= 'sum'>a comprehensive engineering design case study</p>
-            <p class = 'intro-text'>
+            <p class = 'intro-text' style='margin-left: 36%;'>
                 Our challenge was to design and build a robot to sample, identify, and separate individual cells, apply vaccines where needed to immunize uninfected cells, and autonomously collect cell samples. Specifically, we needed to complete the following tasks.
             </p>
             <ul class = 'int-bul'>
@@ -63,11 +63,65 @@
 
                 <br/><br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytical Evaluation of Final Design Alternatives:</strong>
 If more than one prototype was completed, they were tested against each other and their scores were analyzed to determine the final design to be used on the robot. 
-                <br/><br/><strong><u>Strategy</u></strong><br/>
+                <br/><br/><strong><u>Strategy</u></strong>
                 <br/><br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Define Strategy Challenge:</strong>
                     Before we began designing our robot, we developed a strategy to guide the process. We defined the problem by closely examining the rules of the game and developing criteria and constraints with which to evaluate our solutions. Our criteria were scoring potential, ease of design/build, and the likelihood of completion in 8 weeks. Our constraint was BEST rule compliance.
-                <br/><br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brainstorm Solutions</strong>
-                During brainstorming, we proposed a total of 5 strategies (Table 1) for the game. 
+                <br/><br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;Brainstorm Solutions:</strong>
+                During brainstorming, we proposed a total of 5 strategies (Table 1) for the game.       
+            </p>
+            <p class = 'table-intro'>Table 1, Strategy Concepts</p>
+            <br/>
+            <div class = 'table'>
+                    <p>1. Collect, test, and score all on ground cells only.</p>
+                    <p>2. Collect, test, and score all on ground and platform top cells only.</p>
+                    <p>3. Deliver vaccines and collect, test, and score ground cells only. </p>
+                    <p>4. Deliver vaccines and collect, test, and score ground and platform top cells.</p>
+                    <p>5. Complete all tasks.</p>
+            </div>
+            <p class = 'intro-text' style = 'width: 120%; margin-left: 0;'>
+                <br/><strong>Analytical Evaluation of Initial Strategies:</strong>
+                We determined the scoring potential of each strategy by calculating a points-per-minute estimate for cell and vaccine manipulation, both singly and in bulk (See Appendix A, Table A1). This scoring potential and the other criteria were placed in a decision matrix (See Appendix A, Table A2) and each strategy was quantitatively compared.
+                
+                <br/><br/><strong>Develop Strategy:</strong>
+                Based on the results of the decision matrix, we selected strategy 5, completing all tasks. A single unidentified cell in the wrong position at the end of the game has the potential to decrease the score significantly. For this reason, identifying and scoring all cells is essential.
+                
+                After the general strategy was determined, we prioritized individual tasks to further guide our design. The scoring potential analysis showed that bulk cell manipulation was the top priority, followed by delivery of vaccines, followed by individual cell manipulation.
+                
+                Offensive and defensive strategies are summarized in Tables 2 and 3.   
+            </p>
+            <p class = 'table-intro'>Table 2, Offensive Strategies</p>
+            <br/>
+            <ul class = 'table'>
+                <p>●  Create a fast robot that can traverse the playing field quickly.</p>
+                <p>●  Develop a lift that can reach all levels (ground, 6” and 12” platforms).</p>
+                <p>●  Prioritize the delivery of cells whenever possible since this determines score.</p>
+                <p>●  Deliver cells and vaccines simultaneously to save travel time.</p>
+                <p>●  Transport and deliver cells and vaccines in bulk.</p>
+                <p>●  Transport and deliver vaccines to isolation zones and low isolation platform.</p>
+                <p>●  Transport and deliver super vaccine to high isolation platform since it does not roll.</p>
+            </ul>
+            <p class = 'table-intro'><br/>Table 3, Defensive Strategies</p>
+            <br/>
+            <ul class = 'table'>
+                <p>●  Design a robust robot that will avoid breakdowns.</p>
+                <p>●  Ensure vaccines delivered to low platform do not roll off.</p>
+                <p>●  Drive careful when around platforms so as to not move them and incur penalties.</p>
+                <p>●  Ensure cells delivered to the TSA do not get pushed into the spotter’s box.</p>
+                <p>●  Ensure clear communications between spotter and driver when working in the TSA to avoid penalty for manipulating cells when the robot is in the TSA.</p>
+                <p>●  Ensure the driver communicates clearly with the referee during the autonomous period</p>
+                <p>●  Secure all wiring and all robot components to avoid electrical problems and power loss.</p>
+                <p>●  Instruct spotters and drivers on all rules to avoid penalties or reduced scoring.</p>
+            </ul>
+            <p class = 'intro-text' style = 'width: 120%; margin-left: 0;'>
+                <br/><strong>Analytical Evaluation of Final Strategy:</strong>
+                    Analyzing the points accrued during our test trials after the robot was completed (See Appendix B, Table B1) we determined our strategy was effective. We are consistently able to complete all tasks within the time period.
+                    <br/>
+                <br/><strong>Summary of Game Strategy:</strong>
+                    During a match, we will begin by loading the vaccines then autonomously collecting cells in grid 3D to obtain the super vaccine. Attempting this before the cells are disturbed gives us the best chance to complete the task, which is important because the super vaccine is necessary for complete immunization, a requirement for maximum points.
+                    
+                    In the event that the autonomous task fails, we will immediately return to the Robot Starting Area (RSA) and initiate the backup autonomous routine, aiming for the cells in grid 2E. Next we will move the isolation zone in grid 5F to the edge of the field to prevent it obstructing our drive path. 
+                    
+                    Cells in grids 2E and 2F are the next targets, allowing the spotter to begin testing and stacking cells for pickup. At any point, if there are three uninfected or three infected cells ready, the driver will return to the TSA to start delivery. Delivering cells and vaccines to the high isolation platform takes priority since it is the most points. Isolation of infected cells is next in priority, followed by delivery and vaccination of the low isolation platform, then the isolation zones. Vaccines will be delivered simultaneously with cell stack delivery to save travel time. If cells are not ready for delivery, the driver will continue collecting. A detailed sequence is outlined in Appendix C, Table C1.
                     
             </p>
         <footer>
