@@ -30,7 +30,7 @@
             <p class = 'title'>BEST Robotics 2020 - Redshift</p>
             <div class = 'bar'></div>
             <img src = 'images\BEST2020_1.jpg' class='intro-img'></img>
-            <p class= 'sum'>a comprehensive engineering design case study</p>
+            <p class= 'sum'>A Comprehensive Engineering Design Case Study</p>
             <p class = 'intro-text' style='margin-left: 36%;'>
                 Our challenge was to design and build a robot to sample, identify, and separate individual cells, apply vaccines where needed to immunize uninfected cells, and autonomously collect cell samples. Specifically, we needed to complete the following tasks.
             </p>
@@ -122,8 +122,27 @@ If more than one prototype was completed, they were tested against each other an
                     In the event that the autonomous task fails, we will immediately return to the Robot Starting Area (RSA) and initiate the backup autonomous routine, aiming for the cells in grid 2E. Next we will move the isolation zone in grid 5F to the edge of the field to prevent it obstructing our drive path. 
                     
                     Cells in grids 2E and 2F are the next targets, allowing the spotter to begin testing and stacking cells for pickup. At any point, if there are three uninfected or three infected cells ready, the driver will return to the TSA to start delivery. Delivering cells and vaccines to the high isolation platform takes priority since it is the most points. Isolation of infected cells is next in priority, followed by delivery and vaccination of the low isolation platform, then the isolation zones. Vaccines will be delivered simultaneously with cell stack delivery to save travel time. If cells are not ready for delivery, the driver will continue collecting. A detailed sequence is outlined in Appendix C, Table C1.
-                    
+                    <br/>
+                <br/><strong>Robot Engineering Design</strong><br/>
+                <strong>Cell Actuator</strong><br/>
+                <br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Define Design Challenge: </strong>
+                Manipulating cells was the highest priority that emerged from our strategy process and appeared to be the most difficult design challenge, so we began with it. To achieve the ability to collect, transport, and deliver cells to all locations quickly and safely, our criteria was that it be reliable, secure, robust, lightweight, compact, and able to handle multiple cells at the same time. Our constraints were that it comply with BEST rules for operation, materials, and dimensions.
+                <br/>
+                <br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brainstorm Solutions: </strong>
+                Researching potential solutions and brainstorming led to proposals for 22 design concepts. Ideas were inspired by warehouse equipment, assembly line machines, and rodeos. We eliminated the designs for which a viable concept demonstrator could not be created or ones that violated the constraints by breaking the rules or material limits (See Appendix D, Table D1).
+                <br/>
+                <br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Analytical Evaluation of Initial Design Alternatives: </strong>
+                We sketched and created concept demonstrators out of cardboard (See Appendix E, Figures E1 and E2) and completed a decision matrix to quantitatively analyze them (See Appendix A, Table A3). Based on the results, we selected the gated forklift, bulldozer, and pincer for further development. Most of the eliminated designs scored poorly based on their grip insecurity or lack of reliability.
+                <br/>
+                <br/><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Develop Solutions: </strong>
+                Before proceeding, we reviewed the constraints and criteria developed during the first phase, the offensive and defensive strategies planned, and the functionality of the design concept in relation to the overall robot. Sketches and cardboard prototypes were refined and then CAD was sketched and simulated in Onshape.
             </p>
+            <div class = left-right>
+                <strong>Design 1 - Gated Forklift</strong><br/>
+The cardboard prototype (See Appendix E, Figure E3) was remarkably stable and secured the cells without placing strain on the servo-controlled arms, which was a significant concern given the weight of the cells. The forklift was a simple L-shaped piece and the gate was attached to it with arms in a four bar design (Figure 1). Once the forklift slid under the stack of cells, the gate would fold down and secure them, and the force of gravity would keep the gate closed without assistance from the servo. Dual servos were proposed to provide symmetrical movement of the gate, to improve strength, and to have back up if one failed, since this is the major scoring component on the robot. Because the gate and the forklift required high precision for the four bar arms to function properly, we chose to 3d print them. The dimensions of the gate fit in the 4”x4”x2” limit however the forklift was too large. Because the four bar arms attached to the upper section, we chose to 3d print it and make the lower section of the forklift out of formed PVC. The PVC slid better on the carpet and was easier to bend than polypropylene. It also would not deform if impacted, unlike the aluminum sheet. To limit friction, we chose Igus bearings and rods for the arm axles. The arms were to be made out of PVC sheet because it was easier to machine than the ¼” polypropylene. The servos would be connected to the upper four bar arms via piano wire.
+                <img src ='' class = ''>
+
+            </div>
         <footer>
             <div class='social-menu'>
                 <a href='https://www.google.com/maps/place/Arlington,+TX/@32.7020541,-97.2755005,11z/data=!3m1!4b1!4m5!3m4!1s0x864e62d2e40898d3:0xb5ef6ac1fa05351!8m2!3d32.735687!4d-97.1080656'
